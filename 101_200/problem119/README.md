@@ -6,7 +6,7 @@ The number $512$ is interesting because it is equal to the sum of its digits rai
 
 We shall define $a_n$ to be the $n$th term of this sequence and insist that a number must contain at least two digits to have a sum.
 
-You are given that $a_2 = 512$ and $a_10 = 614654$ .
+You are given that $a_2 = 512$ and $a_{10} = 614654$ .
 
-Find $a_30$.
+Find $a_{30}$.
 
