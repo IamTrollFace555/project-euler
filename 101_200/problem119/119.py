@@ -5,9 +5,9 @@ from utils import digit_sum
 
 
 def solve() -> list:
-    digit_lim = 10
-    sum_lim = 9 * digit_lim
-    exponent_lim = 25
+    digit_lim = 10 # Suponiendo que el número no tenga más de 10 dígitos (tampoco es tan importante)
+    sum_lim = 9 * digit_lim # Si todos los dígitos son 9 la suma de los dígitos sería máx 90
+    exponent_lim = 25 # Potencias de más de 25 implicarían una solución más loca que esta la verdad (este sí es importante)
     numbers = []
 
     for n in range(3, sum_lim):
