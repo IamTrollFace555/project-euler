@@ -1,19 +1,12 @@
 # Digit Power Sum
 ## Problem 119
 
-The number 512 is interesting because it is equal to the sum of its digits raised to some power: 
-, and 
-. Another example of a number with this property is 
-.
+The number $512$ is interesting because it is equal to the sum of its digits raised to some power: 
+%5 + 1 + 2 = 8$, and $8^3 = 512$. Another example of a number with this property is $614656 = 28^4$.
 
-We shall define 
- to be the 
-th term of this sequence and insist that a number must contain at least two digits to have a sum.
+We shall define $a_n$ to be the $n$th term of this sequence and insist that a number must contain at least two digits to have a sum.
 
-You are given that 
- and 
-.
+You are given that $a_2 = 512$ and $a_10 = 614654$ .
 
-Find 
-.
+Find $a_30$.
 
