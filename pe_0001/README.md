@@ -22,6 +22,18 @@ The easiest way to solve this problem is to translate to code what the problem i
 With this, we iterate over all (natural) numbers under $1000$ and add them to the sum if they are
 either multiples of $3$ (divisible by $3$) or multiples of $5$ (divisible by $5$).
 
+```py
+# Solution 1
+
+def solution_1(limit: int) -> int:
+
+    multiples_sum = 0
+    for number in range(1, limit):
+        if number % 3 == 0 or number % 5 == 0:
+            multiples_sum += number
+
+    return multiples_sum
+```
 
 ## Solution 2:
 
@@ -69,7 +81,19 @@ Which corresponds to the return statement in the function `solution_2`:
 
  `return S(3) + S(5) - S(15)`.
 
+```py
+# Solution 2
 
+def solution_2(limit: int) -> int:
+
+    def sum_first_n(n:int) -> int:
+        return n*(n+1)//2
+    
+    def S(n: int) -> int:
+        return n * sum_first_n((limit-1)//n) 
+
+    return S(3) + S(5) - S(15)
+```
 
  # Helpful Links
 

@@ -16,7 +16,8 @@ def solution_1(limit: int) -> int:
 
     return multiples_sum
 
-# Solution
+# Solution 2
+
 def solution_2(limit: int) -> int:
 
     def sum_first_n(n:int) -> int:
